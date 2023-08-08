@@ -1,48 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website </title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Blogs</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Software Engineer</p>
-            <h1>Hi, I'm <span>Aman</span><br>Bagadiya from India.</h1>
+<!DOCTYPE html> <!--It is info  to the  browser about what type to expect, html5 ki declaration aise hoti h-->
+<html lang="en"> <!--yahan hum language define kar rhe hain english...-->
+<head> <!--This is our head tag...-->
+    <!--Charset: It is an attribute that tells your browser what character encoding to use for this webpage to show the content as desired.
+UTF-8: It is the version of the character set-->
+    <meta charset="UTF-8"> <!--Meta: It is an HTML tag that contains metadata about a webpage.-->
+    <!--http-equiv attribute allows us to include certain HTTP header-like directives directly in the HTML markup, providing instructions to the browser without involving the actual server response.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--is used to force Internet Explorer (IE) to use the latest version of the rendering engine. Regardless of the document’s compatibility mode.-->
+    <!--user agennt compatible-->
+    <!-- `IE=edge` value instructs IE to use the highest mode available,-->
+    <!-- This tag is used to declare the compatibility mode for a webpage in Internet Explorer (IE).-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--name attribute specifies the purpose or name of the metadata being provided. In this case, it is set to "viewport", indicating that the meta tag is used to define the viewport settings.-->
+    <!--It ensures that the webpage's content will adapt to the width of the device, making the site responsive and accessible on various screen sizes, including mobile devices.-->
+    <!--A value of 1.0 means that the initial zoom level will be 100%, showing the webpage at its default size.-->
+    <title>Personal Portfolio Website </title> <!--Title de rhe hain hamare web page ko-->
+    <link rel="stylesheet" href="style.css"> <!--Style sheet /  css ko include kar rhe hain hum yahaan, relation bta rhe hain doctype ka or reference de rhe hain-->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> 
+    <!--include external JavaScript files in a webpage.The src attribute specifies the URL of the JavaScript file that needs to be loaded  Font Awesome JavaScript file-->
+    <!--crossorigin="anonymous", the browser will load the script from the specified URL without sending any authentication information or cookies, which can help protect the user's sensitive data.-->
+</head> <!--closing the head tag-->
+<body> <!--Body tag begins-->
+<div id="header"> <!-- This is the header section with an id of "header" -->
+    <div class="container"> <!-- This div contains the main content and has a class of "container" -->
+        <nav> <!-- This is the navigation bar -->
+            <img src="images/logo.png" class="logo"> <!-- This is an image element representing the logo with a class of "logo" -->
+            <ul id="sidemenu"> <!-- Unordered list element representing the side menu with an id of "sidemenu" -->
+                <li><a href="#header">Home</a></li> <!-- List item representing the "Home" link -->
+                <!--#header is a "hash fragment" URL, which means it points to an element on the same page with the ID attribute set to "header."-->
+                <li><a href="#about">About</a></li> <!-- List item representing the "About" link -->
+                <li><a href="#services">Blogs</a></li> <!-- List item representing the "Blogs" link -->
+                <li><a href="#portfolio">Projects</a></li> <!-- List item representing the "Projects" link -->
+                <li><a href="#contact">Contact</a></li> <!-- List item representing the "Contact" link -->
+                <!-- Font Awesome icon (cross) used for closing the menu, with a class of "fas fa-times" and a click event for the function "closemenu()" -->
+            </ul> <!--Unordered list ends here-->
+            <!-- Font Awesome icon (bars) used for opening the menu, with a class of "fas fa-bars" and a click event for the function "openmenu()" -->
+        </nav> <!--navigation bar ends here-->
+        <div class="header-text"> <!-- This div contains the header text -->
+            <p>Software Engineer</p> <!-- Paragraph element displaying "Software Engineer" -->
+            <h1>Hi, I'm <span>Aman</span><br>Bagadiya from India.</h1> <!-- Heading level 1 displaying "Hi, I'm Aman Bagadiya from India." with a span for "Aman" -->
         </div>
     </div>
 </div>
 <!-- -----------about---------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
+
+<div id="about"> <!-- About section: This div contains the entire "About Me" section of the webpage. -->
+    <div class="container"> <!-- Outer container: This div creates a container to hold the content with a fixed width. -->
+        <div class="row"> <!-- Row for layout: This div represents a row in a grid layout system. -->
             <div class="about-col-1">
-                <img src="images/user.png">
+                <img src="images/user.png"> <!-- User image: This is an image representing the user or the subject of the page. -->
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I'm a technology enthusiast and I wish to use my technical acumen to contribute
-                    to a place that creates a positive impact on society!I am currently in my 3rd year, persuing B.tech in Computer Science and 
-                    Engineering from SGSITS Indore.I always
-                    embrace differences and be open to alternate ideas and opinions.</p>
-
+                <h1 class="sub-title">About Me</h1> <!-- Sub-title for the section: This is the main heading of the "About Me" section. -->
+                <p>
+                    I'm a technology enthusiast and I wish to use my technical acumen to contribute
+                    to a place that creates a positive impact on society! 
+                    I am currently in my 3rd year, pursuing B.tech in Computer Science and
+                    Engineering from SGSITS Indore. 
+                    I always embrace differences and be open to alternate ideas and opinions. 
+                </p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -52,8 +66,8 @@
                     <ul>
                         <li><span>COMPETITIVE PROGRAMMING</span><br> Using C++, C, JAVA.</li>
                         <li><span>WEB DEVELOPMENT</span><br>Developing user friendly websites using HTML, CSS, JS.</li>
-                        <li><span>CS FUNDAMENTALS </span><br> Data Structures, OOPs, DBMS, OS, Computer Networks.</li>
-                        <li><span>AI / ML </span><br>Currently learning AI / ML. </li>
+                        <li><span>CS FUNDAMENTALS </span><br> Data Structures, OOPs, OS.</li>
+                        <li><span>AI / ML </span><br>Currently learning Python. </li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
@@ -76,28 +90,28 @@
         </div>
     </div>
 </div>
-<!-- ---------services---------------- -->
+<!-- ---------services---------- -->
 <div id="services">
     <div class="container">
         <h1 class="sub-title">My Blogs</h1>
         <div class="services-list">
             <div>
                 <i class="fas fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
+                <h2>Object Oriented Programming</h2>
+                <p>Discover the power and elegance of Object-Oriented Programming (OOPS) in this insightful blog exploring its key concepts and best practices.</p>
+                <a href="https://medium.com/@aman.bagadiya9/embracing-object-oriented-programming-a-journey-into-efficient-and-elegant-code-4bd6242fcd16">Learn more</a>
             </div>
             <div>
                 <i class="fas fa-crop-alt"></i>
-                <h2>UI/UX Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
+                <h2>Dynamic Programming</h2>
+                <p>An Insightful Journey into Optimal Solutions</p>
+                <a href="https://medium.com/@aman.bagadiya9/dynamic-programming-60830694f831">Learn more</a>
             </div>
             <div>
                 <i class="fab fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
+                <h2>Graphs, DSA</h2>
+                <p>Graphs: Unveiling the Diverse Approaches</p>
+                <a href="https://medium.com/@aman.bagadiya9/graphs-unveiling-the-diverse-approaches-ca1275f33aad">Learn more</a>
             </div>
         </div>
     </div>
@@ -148,7 +162,7 @@
                     <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
                     <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                    <a href="https://github.com/AMAN-BAGADIYA"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                    <a href="https://github.com/AMAN-BAGADIYA"><i class="fa fa-github-square" ></i></a>
                     <a href="https://www.linkedin.com/in/aman-jain-bagadiya/"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <a href="https://drive.google.com/file/d/1NG3jiHRr34xm4l0-PORWHcTjZ8mzVRZH/view?usp=sharing" download class="btn btn2">Download CV</a>
@@ -160,7 +174,6 @@
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -168,56 +181,89 @@
         <p>Made wtih <i class="fas fa-heart"></i> by Aman Bagadiya.</p>
     </div>
 </div>
-
-
-
+<audio id="welcomeSound">
+    <source src="images/welcome.mp3" type="audio/mpeg">
+    <!-- Add additional source elements for different audio formats (e.g., .ogg, .wav) -->
+    Your browser does not support the audio element.
+</audio>
+  
 <script>
-
+    // Play the welcome sound when the page is loaded
+    window.addEventListener('load', function() {
+      var welcomeSound = document.getElementById('welcomeSound');
+      welcomeSound.play();
+    });
+</script>
+  
+<script>
+    // Get all elements with the class "tab-links" and store them in the variable "tablinks"
     var tablinks = document.getElementsByClassName("tab-links");
+    // Get all elements with the class "tab-contents" and store them in the variable "tabcontents"
     var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
+    // Define a function named "opentab" that takes a parameter "tabname"
+    function opentab(tabname) {
+        // Loop through each "tablink" in the "tablinks" array
+        for (tablink of tablinks) {
+            // Remove the class "active-link" from the current "tablink"
             tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
+        // Loop through each "tabcontent" in the "tabcontents" array
+        for (tabcontent of tabcontents) {
+            // Remove the class "active-tab" from the current "tabcontent"
             tabcontent.classList.remove("active-tab");
         }
+        // Add the class "active-link" to the clicked element (the element that triggered the event)
         event.currentTarget.classList.add("active-link");
+        // Add the class "active-tab" to the tab content element with the corresponding "tabname"
         document.getElementById(tabname).classList.add("active-tab");
     }
-
 </script>
-
 <script>
-
+    // Get the element with ID "sidemenu" and store it in the variable "sidemeu"
     var sidemeu = document.getElementById("sidemenu");
-
+    // Define a function named "openmenu" to open the side menu
     function openmenu(){
+        // Set the right property of the "sidemeu" element to "0" to slide it in from the right
         sidemeu.style.right = "0";
     }
+    // Define a function named "closemenu" to close the side menu
     function closemenu(){
+        // Set the right property of the "sidemeu" element to "-200px" to slide it out to the right
         sidemeu.style.right = "-200px";
     }
-
 </script>
 <script>
+    // Define the URL of the Google Apps Script where the form data will be submitted
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzYBoH7nW8-jgVOB3L8i-d_guViluHF2AKSifN6J4qqSde1RLDgtqU_OjGj67OEASro/exec' 
+
+    // Get the form with the name "submit-to-google-sheet" and store it in the variable "form"
     const form = document.forms['submit-to-google-sheet']
+
+    // Get the element with ID "msg" and store it in the variable "msg"
     const msg = document.getElementById("msg")
   
+    // Add an event listener to the form for the "submit" event
     form.addEventListener('submit', e => {
+      // Prevent the default form submission
       e.preventDefault()
+
+      // Send a POST request to the Google Apps Script URL with the form data using the Fetch API
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
+            // Display a success message in the element with ID "msg" when the message is sent successfully
             msg.innerHTML = "Message sent successfully"
+
+            // Clear the success message after 5 seconds
             setTimeout(function(){
                 msg.innerHTML = ""
             },5000)
+
+            // Reset the form to clear the input fields
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
 </body>
 </html>
